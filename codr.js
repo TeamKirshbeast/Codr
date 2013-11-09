@@ -25,6 +25,12 @@ function() {
       }
     });
 
+    Q.Sprite.extend("Flag", {
+      init: function(p) {
+        this._super(p, { sheet: 'tower'});
+      }
+    });
+
     Q.Sprite.extend("DraggableObject", {
   init: function() {
     this.on("drag");
@@ -36,4 +42,3 @@ function() {
   }
 });
 }
->>>>>>> 46334f86d4a73fb94902923719276ec20abbba46
